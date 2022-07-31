@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: sans-serif;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-insta {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone img {
+    width: 45rem;
+}
+
+.inscrever {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.grupo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    margin-bottom: 15px;
+    
+}
+
+.grupo:nth-child(1) {
+    min-height: 19rem;
+    margin-top: 80px;
+}
+
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil  img {
+    height: 6rem;
+}
+
+.login {
+    background-color: #0095F6;
+    padding: 5px 9px;
+    width: 243.27px;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    margin: 8px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 550;
+}
+
+.logout {
+    color: #0095F6;
+    margin-top: 1rem;
+}
+
+.not {
+    color: rgb(160, 160, 160);
+    padding: 5px;
+}
+
+.link-blue {
+    color: #0095F6;
+}
+
+
+.apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.dowload {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    width: 100%;
+}
+
+.app-dowload {
+    width: 10rem;
+    height: 3rem;
+    background-size: cover;
+}
+
+.app-dowload:nth-child(1) {
+    background-image:url(/img/apple-button.png);
+}
+
+.app-dowload:nth-child(2) {
+    background-image: url(/img/googleplay-button.png);
+}
+
+@media (max-width: 1024px) {
+    .container-insta {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    body {
+        background-color: #fff;
+    }
+
+    .container-insta {
+        width: 90%;
+    }
+    
+    .inscrever {
+        width: 100%;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .grupo {
+        border: none;
+    }
+}
